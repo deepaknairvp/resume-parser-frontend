@@ -57,6 +57,7 @@
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a  href="upload-job.html">Upload Job</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -162,43 +163,83 @@
           <h2>Upload</h2>
           <p> OUR SERVICE</p>
         </div>
-        <div class="container">
-          <div class="row mx-0 justify-content-center">
-            <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
-              <form
-                method="POST"
-                class="w-100 rounded-1 p-4 border bg-white"
-                action="https://herotofu.com/start"
-                enctype="multipart/form-data"
-              >
-                <label class="d-block mb-4">
-                  <span class="form-label d-block">Your resume</span>
-                  <input required name="photo" type="file" class="form-control" />
-                </label>
-        
-                <div class="mb-3">
-                  <button type="submit" class="btn btn-primary px-3 rounded-3">
-                    Upload
-                  </button>
-                </div>
-        
-                <div class="d-block text-end">
-                  <div class="small">
-                    
-                    <a
-                      href="https://herotofu.com"
-                      class="text-dark text-decoration-none"
-                      target="_blank"
-                      ></a
-                    >
+        <div class="container1">
+          <div class="apply_section">
+              <h1 class="abcd">Job Application
+                  <span class="title_small"></span>
+              </h1>
+              <form action="">
+                  <div class="form_container">
+                      <div class="form_control">
+                          <label for="first_name">First Name</label>
+                          <input type="text" id="first_name"
+                          name="first_name"
+                          required
+                          placeholder="Enter the name.."/>
+                      </div>
+                      <div class="form_control">
+                          <label for="Last_name">Last Name</label>
+                          <input type="text" id="Last_name" 
+                          name="Last_name"
+                          required
+                          placeholder="Enter the name.."/>
+                      </div>
+                      <div class="form_control">
+                          <label for="email">Email</label>
+                          <input type="email" id="email"
+                          name="email"
+                          required
+                          placeholder="Enter the Email.."/>
+                      </div>
+                      <div class="form_control">
+                          <label for="job_Role">Job Role</label>
+                          <select id="job_Role" name="job_Role">
+                              <option value="">..Select Job Role..</option>
+                              <option value="frontend">Frontend Developer</option>
+                              <option value="backend">Backend Developer</option>
+                              <option value="fullstack">Full Stack Developer</option>
+                              <option value="Devopes ">Devops</option>
+                          </select>
+                      </div>
+                      <div class="textarea_control">
+                          <label for="address">Address</label>
+                          <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter the address"required></textarea>
+                      </div>
+                      <div class="form_control">
+                          <label for="city">City</label>
+                          <input type="text" id="city"
+                          name="city"
+                          required
+                          placeholder="Enter the City.."/>
+                      </div>
+                      <div class="form_control">
+                          <label for="pincode">Pincode</label>
+                          <input type="number" id="pincode"
+                          name="pincode"
+                          required
+                          placeholder="Enter the Pincode.."/>
+                      </div>
+                      <div class="form_control">
+                          <label for="date">Date</label>
+                          <input type="date" id="date"
+                          name="date"
+                          required/>
+                      </div>
+                      <div class="form_control">
+                          <label for="upload">Uplod Your Resume</label>
+                          <input type="file" id="upload"
+                          name="upload" multiple
+                          required/>
+                      </div>
                   </div>
-                </div>
+                  <div class="button_container">
+                      <button type="submit" >Apply Now</button>
+                  </div>
+                  
+                  
               </form>
-            </div>
           </div>
-        </div>
-        
-
+      </div>
                          
 
 
